@@ -1,6 +1,13 @@
 import React from 'react';
 import { Index } from './index.tsx';
 
+type PublicationProps = {
+  title: string;
+  authors: string;
+  journal: string;
+  link: string;
+}
+
 const publications = [
   {
     title: "Integrated gut microbiome and metabolome analyses identified fecal biomarkers...",
@@ -28,26 +35,37 @@ const publications = [
   }
 ];
 
+const PubProps = ({ title, authors, journal, link }: PublicationProps) => {
+  return (
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col justify-between h-48 w-56 p-4 bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl transition-all"
+    >
+      <div>
+        <h3 className="font-semibold text-md mb-2 line-clamp-3">{title}</h3>
+        <p className="text-xs text-gray-600 mb-2">{authors}</p>
+      </div>
+      <p className="text-xs text-gray-500 italic mt-auto">{journal}</p>
+    </a>
+  )
+}
+
 export const Publications = () => {
   return (
     <section id="publications" className="mb-12">
       <Index name='Publications' />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
-        {publications.map((pub, index) => (
-          <a
-            key={index}
-            href={pub.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col justify-between h-48 w-56 p-4 bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl transition-all"
-          >
-            <div>
-              <h3 className="font-semibold text-md mb-2 line-clamp-3">{pub.title}</h3>
-              <p className="text-xs text-gray-600 mb-2">{pub.authors}</p>
-            </div>
-            <p className="text-xs text-gray-500 italic mt-auto">{pub.journal}</p>
-          </a>
+        {publications.map((pub) => (
+          <PubProps
+            key={pub.title}
+            title={pub.title}
+            authors={pub.authors}
+            journal={pub.journal}
+            link={pub.link}
+          />
         ))}
       </div>
     </section>

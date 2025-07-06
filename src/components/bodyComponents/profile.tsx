@@ -1,6 +1,6 @@
 import React from 'react';
 import { Index } from './index.tsx'
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaKaggle } from 'react-icons/fa';
 
 export const Profile = () => {
     return (
@@ -9,7 +9,7 @@ export const Profile = () => {
             <div className="flex flex-col md:flex-row items-center gap-6">
                 {/* 画像 */}
                 <img 
-                src="/images/profile.png" 
+                src="./images/profile.png" 
                 alt="Placeholder profile" 
                 className="w-32 h-32 rounded-full object-cover shadow-md" 
                 />
@@ -20,6 +20,7 @@ export const Profile = () => {
                     {/* アイコンを横並び */}
                     <div className="flex items-center gap-2">
                         <h1 className="text-xl font-bold mb-2">Yutaro Ito</h1>
+                        {/* GitHub */}
                         <a
                         href="https://github.com/yutarooo216"
                         target="_blank"
@@ -27,7 +28,17 @@ export const Profile = () => {
                         className="text-gray-700 hover:text-black ml-1"
                         aria-label="GitHub"
                         >
-                            <FaGithub size={20} />
+                        <FaGithub size={20} />
+                        </a>
+                        {/* Kaggle */}
+                        <a
+                        href="https://www.kaggle.com/yutaroito" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-700 hover:text-black ml-1"
+                        aria-label="Kaggle"
+                        >
+                        <FaKaggle size={20} />
                         </a>
                     </div>
                     <p className="text-base text-gray-700">
