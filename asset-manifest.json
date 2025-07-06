@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portforio/static/css/main.77779394.css",
+    "main.js": "/portforio/static/js/main.03b5b4b1.js",
+    "index.html": "/portforio/index.html",
+    "main.77779394.css.map": "/portforio/static/css/main.77779394.css.map",
+    "main.03b5b4b1.js.map": "/portforio/static/js/main.03b5b4b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77779394.css",
+    "static/js/main.03b5b4b1.js"
+  ]
+}
