@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portforio/static/css/main.77779394.css",
-    "main.js": "/portforio/static/js/main.5e062be3.js",
+    "main.js": "/portforio/static/js/main.e9822376.js",
     "index.html": "/portforio/index.html",
     "main.77779394.css.map": "/portforio/static/css/main.77779394.css.map",
-    "main.5e062be3.js.map": "/portforio/static/js/main.5e062be3.js.map"
+    "main.e9822376.js.map": "/portforio/static/js/main.e9822376.js.map"
   },
   "entrypoints": [
     "static/css/main.77779394.css",
-    "static/js/main.5e062be3.js"
+    "static/js/main.e9822376.js"
   ]
 }
