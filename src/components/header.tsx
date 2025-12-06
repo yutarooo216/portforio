@@ -9,7 +9,6 @@ export const Header = () => {
                     <li><a href="#profile" className="hover:underline">Profile</a></li>
                     <li><a href="#works" className="hover:underline">Works</a></li>
                     <li><a href="#publications" className="hover:underline">Publications</a></li>
-                    {/* <li><a href="#contact" className="hover:underline">contact</a></li> */}
                 </ul>
             </nav>
         </header>

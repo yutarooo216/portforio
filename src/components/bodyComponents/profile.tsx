@@ -44,8 +44,9 @@ export const Profile = () => {
                     <p className="text-base text-gray-700">
                         大学院修士課程で分子生物学、バイオインフォマティクスを専攻。<br />
                         メーカー研究所で素材探索の研究に従事、東京大学に出向しアルツハイマー病の研究に取り組む。<br />
-                        現在はITメーカーで医療データを中心に、データの利活用のためのシステム構築に従事。<br />
+                        ITメーカーで医療データを中心に、データの利活用のためのシステム構築に従事。<br />
                         副業としてバイオインフォマティクスの受託研究員を兼務、論文執筆、解析パイプライン実装を担当。<br />
+                        現在は外資製薬企業でエンジニアとして勤務。<br />
                     </p>
                     <p className="text-base text-gray-700 font-bold mt-1">
                         技術領域: Python, R, SQL, JavaScript (React), Shell script, Terraform, AWS, Kubernetes<br />

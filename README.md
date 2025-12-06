@@ -54,7 +54,7 @@ npm run deploy
 ```
 
 The site is hosted at:  
-📍 https://YOUR_USERNAME.github.io/YOUR_REPO_NAME
+📍 https://yutarooo216.github.io/portforio/
 
 ---
 
